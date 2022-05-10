@@ -1,0 +1,360 @@
+* {box-sizing:border-box}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    color: white;
+    background: black;
+}
+
+
+
+h1, #subtitle{
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+h1{
+    font-size: 2.5em;
+    font-weight: 200;
+    font-style: normal;
+    letter-spacing: 15px;
+}
+
+/*GENERAL*/
+span{
+    letter-spacing: 10px;
+}
+
+a{
+  text-decoration: underline;
+}
+a:hover{
+  cursor: pointer;
+}
+
+h2{
+    text-align: center;
+    font-style: italic;
+    letter-spacing: 5px;
+    color:#989898;
+    margin: 10% auto;
+}
+
+.line{
+    margin-bottom:20px;
+    height: 20px;
+    width: 40px;
+    border-bottom: 2px solid #d78e38;
+    margin: 0 45%;
+}
+
+.quotes .line, .gallery-line{
+    height: 20px;
+    width: 40px;
+    border-bottom: 2px solid #989898;
+    margin: 2% 45%;
+}
+
+/*HEDAER*/
+nav{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+nav a:hover{
+  transform: scale(1.5, 1.5);
+  color: #d78e38;
+  transition: 0.8s;
+}
+
+header .line{
+    margin-top: 3%;
+}
+#subtitle{
+    font-size: 1.8em;
+    font-style: italic;
+    letter-spacing: 6px;
+    color:#989898;
+}
+
+/*PHOTO MAIN*/
+.photo img{
+    margin-top: 5%;
+    width: 100%;
+    height:50%;
+}
+
+.photo figure blockquote{
+    margin: 0%;
+}
+
+.photo blockquote{
+    justify-content: center;
+    text-align: center;
+}
+
+
+/*TIMELINE*/
+
+ul{
+    padding-left: 12%;
+}
+
+#timeline li{
+    word-spacing: 0;
+    margin: 3% 1%;
+}
+
+.date{
+    letter-spacing: 1px;
+    font-weight: 800;
+    color: #d78e38;
+}
+
+
+/*QUOTES*/
+
+#quotes{
+    font-family: 'Courgette', cursive;
+}
+
+#quotes{
+    text-align: center;
+}
+
+/*GALLERY*/
+
+.numbertext{
+    text-align: center;
+}
+#gallery img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+#links a{
+    color: cornflowerblue;
+    text-decoration: none;
+}
+
+.next, .prev{
+    font-size: 4rem;
+    margin: auto 2%;
+}
+
+.next{
+    float: right;
+}
+
+footer{
+    text-align: center;
+}
+
+h3{
+    margin: 5% 0;
+}
+@media only screen and (min-width: 768px){
+h2{
+    margin: 4% auto;
+}
+
+ul{
+    margin: 2% auto;
+}
+.photo figure{
+    margin: 4% 11%;
+}
+
+    /* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  /* Hide the images by default */
+.mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  /* Caption text */
+.text {
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+}
+
+@media only screen and (min-width: 992px) {
+    h2{
+        margin: 4% auto;
+    }
+    
+    ul{
+        margin: 2% auto;
+    }
+    .photo figure{
+        margin: 4% 11%;
+    }
+    
+        /* Slideshow container */
+    .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+      }
+      /* Hide the images by default */
+    .mySlides {
+        display: none;
+      }
+      
+      /* Next & previous buttons */
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+    
+      /* Position the "next button" to the right */
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+    
+      /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+      }
+      /* Caption text */
+    .text {
+        color: #f2f2f2;
+        font-size: 1.1rem;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+      }
+      
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+      
+      /* The dots/bullets/indicators */
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      
+      .active, .dot:hover {
+        background-color: #717171;
+      }
+      
+      /* Fading animation */
+      .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+      
+      @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+      }
+     
+}

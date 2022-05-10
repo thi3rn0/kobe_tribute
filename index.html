@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kobe BRYANT's tribute page</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav id="navigation">
+                <a href="#timeline">Timeline</a>
+                <a href="#quotes">Quotes</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#links">More contents</a>
+            </nav>
+            <div class="line"></div>
+            <h1>Kobe BRYANT <span>1978-2020</span></h1>
+            <p id="subtitle">The modern sports Alpha</p>
+            <div class="line"></div>
+        </header>
+        <main>
+          <div class="photo">
+              <img src="img/Kobe-Bryant.jpg" alt="kobe celebrating his first NBA title in 2000">
+              <figure>
+                  <blockquote>
+                      <p id="quotes">"It’s the one thing you can control. You are responsible for how people remember you—or don’t. So don’t take it lightly."</p>
+                      <cite>Kobe about his legacy</cite>
+                  </blockquote>
+              </figure>
+            </div>
+            <div class="line"></div>
+            <div id="timeline">
+                <h2>Timeline of Kobe's carrer</h2>
+                <ul>
+                    <li><span class="date">1978:</span> Born in Philadelphia</li>
+                    <li><span class="date">1996:</span> Drafted by the Charlotte Hornets then traded to the Lakers</li>
+                    <li><span class="date">2000:</span> First NBA Title</li>
+                    <li><span class="date">2008:</span> Won the Most Valuable Player's trophy and the  gold medal at the 2008 Summer Olympics</li>
+                    <li><span class="date">2010:</span> Won his 5th and last NBA title; 2nd time Finals MVP </li>
+                    <li><span class="date">2012:</span> Won the  gold medal at the 2012 Summer Olympics</li>
+                    <li><span class="date">2016:</span> Played his last game scoring 60 points (20th season)</li>
+                    <li><span class="date">2020:</span> Died in a helicopter crash along his 2nd daughter Gianna and 7 ohter persons in California</li>    
+                </ul>
+            </div>
+            <div class="line"></div>
+            <div class="quotes">
+            <h2>Impactful quotes</h2>
+                    <p id="quotes">"The most important thing is to try and inspire people so that they can be great in whatever they want to do."</p>
+                    <div class="line"></div>            
+                    <p id="quotes">"Everything negative – pressure, challenges – is all an opportunity for me to rise." </p>
+                    <div class="line"></div>            
+                    <p id="quotes">"Haters are a good problem to have. Nobody hates the good ones. They hate the great ones."</p>
+                    <div class="line"></div>            
+                    <p id="quotes">"Pain doesn’t tell you when you ought to stop. Pain is the little voice in your head that tries to hold you back because it knows if you continue you will change."</p>
+                    <div class="line"></div>            
+                    <p id="quotes">"I can’t relate to lazy people. We don’t speak the same language. I don’t understand you. I don’t want to understand you."</p>
+            
+            </div>
+            <div class="line"></div>
+            <div id="gallery">
+                <h2>Gallery</h2>
+                <!-- Slideshow container -->
+                <div class="slideshow-container">
+
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 4</div>
+                        <img src="img/ice.jpg" >
+                        <div class="text"><span class="date">2010</span> - Game preparation in solitude</div>
+                         
+                    </div>
+            
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 4</div>
+                        <img src="img/work.jpg">
+                        <div class="text"><span class="date">2010</span> - Kobe with assistant coach Graig Hodges an hour and a half after practice.</div>
+                         
+                    </div>
+            
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 4</div>
+                        <img src="img/pyjama.jpeg">
+                        <div class="text"><span class="date">1999</span> - Training his left hand wearing pyjama due to a broken right hand.</div>
+                        
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">4 / 4</div>
+                        <img src="img/gigi.jpg" >
+                        <div class="text"><span class="date">2013</span> - Kobe and Gianna at the All-Star open practice.</div>
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                </div>
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>  
+            </div>  
+        </main>
+        <div class="line"></div>
+        <footer id="links">
+            <h2>More contents</h2>
+            <h3>Check this tribute video made by the youtube channel Ace Productions <a href="https://www.youtube.com/watch?v=7mFGeA5YDzw" target="_blank">here</a></h3> 
+            <h3>More information about his life <a href="https://en.wikipedia.org/wiki/Kobe_Bryant" target="_blank">here</a></h3>
+            <a href="#navigation">Back to top</a>
+        </footer>
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+    </body>
+</html>
